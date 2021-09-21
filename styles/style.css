@@ -1,0 +1,30 @@
+@import url('./normalize.css');
+
+:root {
+    --col-purple: hsl(299, 24%, 55%);
+    --col-red: hsl(0, 86%, 59%);
+    
+    --base: 16px;
+    --base-05: calc(var(--base*0.5)); 
+    --base-025: calc(var(--base*0.25));
+    --base-075: calc(var(--base*0.75));
+    --base-125: calc(var(--base*1.25));
+    --base-15: calc(var(--base*1.5));
+    --base-175: calc(var(--base*1.75));
+    --base-2: calc(var(--base*2));
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    /* background: yellow; */
+}
+
+.user-card{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
