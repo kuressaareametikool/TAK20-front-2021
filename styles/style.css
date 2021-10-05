@@ -50,9 +50,7 @@ html {
 
 
 /* element styles */
-.container {
-    padding: clamp(var(--base-025), 5vmin, calc( var(--base-2)*2));
-}
+
 
 .user-card{
     padding: 
@@ -60,13 +58,33 @@ html {
         clamp( var(--base-05), 4vw, var(--base-2) );
     text-align: center;
     border-radius: var(--base-05);
+    border: 0.25rem solid var(--col-purple);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .user-card__name{
     font-family: var(--font-heading);
     font-size: var(--base-15);
+    overflow-wrap: break-word;
 }
 .user-card__cite{
     font-family: var(--font-main);
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    
+    padding: clamp(var(--base-025), 5vmin, calc( var(--base-2)*2)); 
+}
+
+@media (min-width: 60rem) { 
+    .container {
+        flex-direction: row;
+        gap: 1.6vw;
+    }
 }
