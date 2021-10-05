@@ -1,0 +1,18 @@
+.container {
+    width: auto;
+    height: auto;
+    margin: 2%;
+}
+
+.user-card {
+    position: static;
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+    border: 2px solid #a771a8;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    flex: none;
+    margin: 24px 0px;
+}
