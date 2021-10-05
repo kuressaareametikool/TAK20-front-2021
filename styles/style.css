@@ -1,30 +1,72 @@
+/* 
+    setting up the project 
+*/
+
 @import url('./normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
 
 :root {
     --col-purple: hsl(299, 24%, 55%);
     --col-red: hsl(0, 86%, 59%);
+
+    --font-heading: "Comic Neue", sans-serif;
+    --font-main: "Roboto", sans-serif;
     
     --base: 16px;
-    --base-05: calc(var(--base*0.5)); 
-    --base-025: calc(var(--base*0.25));
-    --base-075: calc(var(--base*0.75));
-    --base-125: calc(var(--base*1.25));
-    --base-15: calc(var(--base*1.5));
-    --base-175: calc(var(--base*1.75));
-    --base-2: calc(var(--base*2));
+    --base-05: calc( var(--base)*0.5 ); /* 8px */
+    --base-025: calc( var(--base)*0.25 );
+    --base-075: calc( var(--base)*0.75 );
+    --base-125: calc( var(--base)*1.25 );
+    --base-15: calc(var(--base)*1.5);
+    --base-175: calc(var(--base)*1.75);
+    --base-2: calc(var(--base)*2);
 }
 
 html {
     box-sizing: border-box;
+    /* background: var(--col-red); */
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-body{
-    /* background: yellow; */
+
+
+/*
+    helpers
+*/
+
+.padding-1 {
+    padding: var(--base);
+}
+.padding-05{
+    padding: var(--base-05);
+}
+.padding-2{
+    padding: var(--base-2);
+}
+
+
+
+/* element styles */
+.container {
+    padding: clamp(var(--base-025), 5vmin, calc( var(--base-2)*2));
 }
 
 .user-card{
+    padding: 
+        clamp( var(--base-05), 4vh, var(--base-2) ) 
+        clamp( var(--base-05), 4vw, var(--base-2) );
+    text-align: center;
+    border-radius: var(--base-05);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user-card__name{
+    font-family: var(--font-heading);
+    font-size: var(--base-15);
+}
+.user-card__cite{
+    font-family: var(--font-main);
 }
