@@ -11,6 +11,7 @@ img {
 }
 main {
     margin: auto;
+    padding: 0;
 }
 .godText {
     font-family: Roboto;
