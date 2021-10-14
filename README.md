@@ -1,9 +1,3 @@
-# Joe mama 
-
-Kass.
-
-## Mulle ei meeldinud eelmine tekst siin, niiet ma muudan seda.
-
-# CAT
-
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4JE_DIaVz-56cI3g9uT1uwHaFj%26pid%3DApi&f=1
+# Cat.
+## TAK-20 Front stuff, kui tahad rohkem infot näha, vaata kellegi teise branchi...
+![cat](https://user-images.githubusercontent.com/71066639/137274609-e7feda84-07d3-466e-ad5e-85c8179915da.png)
