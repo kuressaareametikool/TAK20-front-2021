@@ -1,3 +1,3 @@
 # Cat.
 ## TAK-20 Front stuff, kui tahad rohkem infot näha, vaata kellegi teise branchi...
-![cat](https://user-images.githubusercontent.com/71066639/137274609-e7feda84-07d3-466e-ad5e-85c8179915da.png)
+![CatBlack](https://user-images.githubusercontent.com/71066639/137276824-202897f5-418e-4cda-bd8a-3986ba60b384.png)
