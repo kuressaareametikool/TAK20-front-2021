@@ -1,5 +1,5 @@
 .active {
-    position: absolute;
+
 width: 32px;
 height: 32px;
 right: 24px;
@@ -9,14 +9,14 @@ background: #F03F3F;
 }
 
 .vector {
-    position: absolute;
+
 width: 112px;
 height: 112px;
 left: calc(50% - 112px/2);
 top: 42px;
 }
 .nimi {
-    position: absolute;
+
 height: 31px;
 left: 22px;
 right: 25px;
@@ -30,7 +30,7 @@ line-height: 28px;
 text-align: center;
 }
 .card {
-position: absolute;
+
 width: 366px;
 height: 332px;
 left: 20px;
@@ -43,7 +43,7 @@ border-radius: 12px;
 }
 
 .bio {
-    position: absolute;
+
 height: 64px;
 left: 32px;
 right: 33px;
@@ -55,4 +55,8 @@ font-weight: 300;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
+}
+.all {
+    display: flex;
+    flex-wrap: wrap;
 }
