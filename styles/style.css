@@ -1,0 +1,119 @@
+/* 
+    setting up the project 
+*/
+
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+:root {
+    --col-purple: hsl(299, 24%, 55%);
+    --col-red: hsl(0, 86%, 59%);
+    --font-heading: "Montserrat", sans-serif;
+    --font-main: "Montserrat", sans-serif;
+    --base: 16px;
+    --base-05: calc( var(--base)*0.5);
+    /* 8px */
+    --base-025: calc( var(--base)*0.25);
+    --base-075: calc( var(--base)*0.75);
+    --base-125: calc( var(--base)*1.25);
+    --base-15: calc(var(--base)*1.5);
+    --base-175: calc(var(--base)*1.75);
+    --base-2: calc(var(--base)*2);
+}
+
+html {
+    box-sizing: border-box;
+    /* background: var(--col-red); */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*
+    helpers
+*/
+
+.padding-1 {
+    padding: var(--base);
+}
+
+.padding-05 {
+    padding: var(--base-05);
+}
+
+.padding-2 {
+    padding: var(--base-2);
+}
+
+
+/* element styles */
+
+.user-card {
+    padding: clamp( var(--base-05), 4vh, var(--base-2)) clamp( var(--base-05), 4vw, var(--base-2));
+    text-align: center;
+    border-radius: var(--base-05);
+    border: 0.25rem solid var(--col-purple);
+    box-shadow: -4px -7px 14px 1px rgba(165, 165, 165, 0.25), 9px 9px 10px rgba(7, 7, 7, 0.25), inset 8px 8px 6px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, #000, #272727);
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.user-card__name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow-wrap: break-word;
+}
+
+.user-card__cite {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.user-card_image {
+    background: #A771A8;
+    box-shadow: -3px -6px 7px rgba(94, 94, 94, 0.25), inset 4px 14px 6px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: clamp(var(--base-025), 5vmin, calc( var(--base-2)*2));
+}
+
+@media (min-width: 60rem) {
+    .container {
+        flex-direction: row;
+        gap: 1.6vw;
+    }
+}
+
+body {
+    background: #2E2E2E;
+}
