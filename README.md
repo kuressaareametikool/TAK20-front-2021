@@ -1,13 +1,9 @@
-See on Oliveri branch
+# Joe mama 
 
-# TAK20-front-2021
-TAK20 frondi tegemised
+Kass.
 
-## Ülesanne 1: user list
+## Mulle ei meeldinud eelmine tekst siin, niiet ma muudan seda.
 
-- Loo Figmas loodud vaated (mobla+desktop) HTML/CSS-is.
-- Figma: https://www.figma.com/file/5EnHH8zu3yDjvO9helRRno/TAK20-front-user-card
+# CAT
 
----
-
-## Siit läheb edasi
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4JE_DIaVz-56cI3g9uT1uwHaFj%26pid%3DApi&f=1
