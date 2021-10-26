@@ -132,6 +132,20 @@ html {
 }
 
 body {
-    background: #180011;
+    background: linear-gradient(-45deg, #2b0021, #18002e, #2b0028, #20001c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     padding: 8%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
