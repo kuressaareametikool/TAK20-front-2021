@@ -4,6 +4,8 @@ body {
     justify-content: center;
     margin: 100px;
     gap: 75px;
+    color: limegreen;
+    background-color: darkred;
 }
 img {
     display: flex;
@@ -11,6 +13,7 @@ img {
     height: 112px;
     width: 112px;
     margin-top: 42px;
+    
 }
 main {
     margin: auto;
@@ -23,18 +26,26 @@ main {
     line-height: 19px;
     text-align: center;
     margin: 0px 32px 47px 32px;
+    color: #F28500;
+}
+.godText::before {
+    content: "☭";
+    font-size: 67px;
+    color: red;
 }
 .person-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 1px -0.5px 20px fuchsia;
+    box-shadow: 1px -0.5px 31px fuchsia;
+    
     text-align: center;
     border-radius: 10px;
-    max-width: 360px;
-    max-height: 332px;
+    max-width: 370px;
+    max-height: 350px;
     margin-bottom: 16px;
+    background-color: black;
 }
 .name {
     padding-top: 10px;
