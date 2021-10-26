@@ -5,12 +5,14 @@
 @import url('./normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
 :root {
-    --col-purple: hsl(299, 24%, 55%);
+    --col-dark-purple: hsl(299, 100%, 11%);
+    --col-purple: hsl(299, 100%, 50%);
     --col-red: hsl(0, 86%, 59%);
+    --col-white: hsl(0, 0%, 100%);
     --font-heading: "Montserrat", sans-serif;
     --font-main: "Montserrat", sans-serif;
     --base: 16px;
-    --base-05: calc( var(--base)*0.5);
+    --base-05: calc( var(--base)*2.0);
     /* 8px */
     --base-025: calc( var(--base)*0.25);
     --base-075: calc( var(--base)*0.75);
@@ -55,9 +57,24 @@ html {
     padding: clamp( var(--base-05), 4vh, var(--base-2)) clamp( var(--base-05), 4vw, var(--base-2));
     text-align: center;
     border-radius: var(--base-05);
+    border: 0.25rem solid var(--col-dark-purple);
+    background: linear-gradient(0deg, rgb(37, 0, 31), #09002e);
+    transition: ease-in 200ms;
+    box-shadow: 5px 5px 5px rgb(19, 19, 19);
+}
+
+.user-card:hover {
+    transition: ease-in 200ms;
+    background: linear-gradient(0deg, rgb(122, 0, 102), #19007c);
+    cursor: pointer;
     border: 0.25rem solid var(--col-purple);
-    box-shadow: -4px -7px 14px 1px rgba(165, 165, 165, 0.25), 9px 9px 10px rgba(7, 7, 7, 0.25), inset 8px 8px 6px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(0deg, #000, #272727);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.user-card:active {
+    transition: width 0.2s ease-in-out, top 0.2s ease-in-out;
+    background: linear-gradient(0deg, rgb(172, 0, 172), rgb(0, 115, 160));
+    border: 0.25rem solid var(--col-white);
 }
 
 @keyframes steam {
@@ -74,7 +91,7 @@ html {
 
 .user-card__name {
     font-family: Montserrat;
-    font-style: normal;
+    font-style: bold;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -85,8 +102,8 @@ html {
 }
 
 .user-card__cite {
-    font-family: Roboto;
-    font-style: italic;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -115,5 +132,5 @@ html {
 }
 
 body {
-    background: #2E2E2E;
+    background: #180011;
 }
