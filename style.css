@@ -5,7 +5,12 @@ body {
     margin: 100px;
     gap: 75px;
     color: limegreen;
-    background-color: darkred;
+    background-image: url('https://c.tenor.com/hQ2jrnzK1nQAAAAC/rickrolled-zerotwo.gif');
+    background-size: cover;
+    
+    height: 100vh;
+    padding:150px;
+    margin:0;
 }
 img {
     display: flex;
@@ -50,4 +55,9 @@ main {
 .name {
     padding-top: 10px;
     font-family: 'Comic Neue';
+}
+.cat {
+    margin: -140px;
+    left: -160px;
+    position: absolute;
 }
