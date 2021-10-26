@@ -1,3 +1,9 @@
 body{
-    background:red;
+    
+}
+.person-wrapper{
+    background:green;
+}
+.people{
+    display: flex;
 }
